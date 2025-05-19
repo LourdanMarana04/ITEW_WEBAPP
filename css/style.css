@@ -1,0 +1,192 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap");
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #0F172A;
+    color: #F1F5F9;
+    padding-top: 56px; 
+}
+S
+h1, h2, h3, h4, h5, h6, .nav-link.active, .display-4, .display-5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #FFD700 !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.navbar {
+    background-color: #1E293B !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.nav-link {
+    color: #CBD5E1 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #FFD700 !important; 
+}
+
+footer {
+    background-color: #1E293B !important;
+    padding: 2rem 0;
+    border-top: 1px solid #334155;
+    text-align: center;
+}
+
+footer a {
+    color: #94A3B8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #111111;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+    color: #000000;
+}
+
+.form-control, .form-select {
+    background-color: #0F172A;
+    color: #F1F5F9;
+    border: 1px solid #475569;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.card {
+    background-color: #334155; 
+    border: 1px solid #475569;
+    color: #F8FAFC;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    border-color: #334155;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    .navbar .container {
+        flex-wrap: nowrap;
+    }
+    .gallery-img {
+        height: 180px;
+    }
+    .form-control, .form-select {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .card {
+        margin-bottom: 2rem;
+    }
+    .btn {
+        padding: 0.6rem 1.2rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .gallery-img {
+        height: 150px;
+    }
+    .form-control, .form-select {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h1, .display-4 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    .page-header {
+        padding: 4rem 0;
+    }
+    .film-header {
+        padding: 5rem 0;
+    }
+    .trailer-placeholder {
+        height: 250px;
+    }
+    .gallery-img {
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .service-detail-img,
+    .article-header-img {
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card {
+        margin: 1rem 0;
+    }
+    .btn,
+    .form-control,
+    .form-select {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+}
+
+a, button {
+    outline: none;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+

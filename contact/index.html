@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wansekonds Entertainment - Contact Us</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/contact.jpg") no-repeat center center;
+            background-size: cover;
+            padding: 6rem 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .form-control,
+        .form-select {
+            background-color: #495057; 
+            color: #fff;
+            border-color: #6c757d;
+        }
+        .form-control:focus,
+        .form-select:focus {
+            background-color: #495057;
+            color: #fff;
+            border-color: #FFD700; 
+            box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+        }
+        .form-control::placeholder {
+            color: #adb5bd;
+        }
+        label {
+            color: #E2E8F0;
+        }
+        .map-placeholder {
+            height: 300px;
+            background-color: #6c757d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-style: italic;
+            border-radius: .25rem;
+        }
+    </style>
+
+</head>
+<body class=" text-light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="/index.html">Wansekonds Entertainment</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about/index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/films/index.html">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services/index.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news/index.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/careers/index.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/contact/index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1 class="display-4">Get In Touch</h1>
+                <p class="lead">We’d love to hear from you. Reach out with questions, inquiries, or collaboration ideas.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="my-5">
+                <div class="row">
+                    <div class="col-md-7 mb-4 mb-md-0">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="General Inquiry" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="formFeedback" class="mt-3"></div> <!-- For JS feedback -->
+                    </div>
+
+                    <div class="col-md-5">
+                        <h2>Contact Information</h2>
+                        <p><strong class="text-primary">Address:</strong><br>123 Banaybanay,<br>Cabuyao, Laguna 4025,<br>Philippines</p>
+                        <p><strong class="text-primary">Phone:</strong><br><a href="tel:+1234567890" class="text-light">+63 (234) 567-890</a></p>
+                        <p><strong class="text-primary">Email:</strong><br><a href="mailto:info@starlightstudios.fake" class="text-light">info@wansekondsentertainment.com</a></p>
+
+                        <h3 class="mt-4">Our Location</h3>
+                        <div class="map-placeholder mb-4">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.932143240398!2d121.14295744716505!3d14.27671615455916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd61522d3b15d9%3A0x6d8937d11ff68d87!2sCabuyao%2C%20Laguna!5e0!3m2!1sen!2sph!4v1684914538325!5m2!1sen!2sph" 
+                                width="100%" 
+                                height="300px" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>                        </div>
+                        <p>Visit us at our headquarters in the heart of Hollywood.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-light text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Wansekonds Entertainment. All Rights Reserved.</p>
+            <p>
+                <a href="/legal/privacy.html" class="text-secondary mx-2">Privacy Policy</a> |
+                <a href="/legal/terms.html" class="text-secondary mx-2">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="/js/script.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const feedbackDiv = document.getElementById("formFeedback");
+            feedbackDiv.innerHTML = 
+                `<div class="alert alert-success" role="alert">
+                    Thank you for your message! We'll get back to you soon. (Form submission simulated)
+                 </div>`;
+        });
+    </script>
+
+</body>
+</html>
